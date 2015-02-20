@@ -39,4 +39,5 @@ cacheSolve <- function(x, ...) {  # CacheSolve "detects" that the inverse has be
         i <- solve(data, ...)   # Computes the inverse
         x$setinverse(i)         # Sets the calculated inverse in the cache
         i
+        
 }
