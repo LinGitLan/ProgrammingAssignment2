@@ -9,7 +9,7 @@ makeCacheMatrix <- function(x = matrix()) {
         set <- function(y) {    # 'set' changes the value of the matrix on which to calculate the inverse. Whenever 'set' is called, the solution (i.e. the inverse) is "cleared" to ensure it will be recalculated.
              x <<- y
              i <<- NULL         # Special assignment operator (<<-) updates the value of variable i (wchich was previously set to NULL).
-        }
+        } 
         
         get <- function() x
         setinverse <- function(solve) i <<- solve
